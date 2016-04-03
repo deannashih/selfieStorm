@@ -1,0 +1,24 @@
+<ion-view view-title="Dashboard">
+  <ion-content class="padding">
+
+    <button class="button button-block button-positive" ng-click="takePhoto()">
+  Take Selfie
+</button>
+
+<img id="myImage" ng-src="{{newPhoto.image}}" alt="waiting for photo" width="100%">
+
+
+<div class="list">
+  <label class="item item-input">
+    <input type="text" placeholder="Title" ng-model="newPhoto.title">
+  </label>
+  <label class="item item-input">
+    <textarea placeholder="Description" ng-model="newPhoto.description"></textarea>
+  </label>
+  <button class="button button-full button-balanced" ng-click="savePhoto()">
+  Save
+</button>
+</div>
+
+  </ion-content>
+</ion-view>
